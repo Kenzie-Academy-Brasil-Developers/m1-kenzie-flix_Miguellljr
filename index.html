@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Kenzieflix</title>
+  </head>
+  <body>
     <header class="centralize">
-        <figure>
-            <img src="./img/logo.png" alt="Logo Kenzieflix">
-        </figure>
+      <figure>
+        <img src="./img/logo.png" alt="Logo Kenzieflix" />
+      </figure>
     </header>
     <main>
-        <h1 class="centralize">Quem está assistindo?</h1>
-        <ul>
-            <li><img class="cards" src="./img/pink.png" 
-            alt="Perfil de usuário com imagem de uma garota em desenho">
-            <p>Aline</p></li>
-            <li><img class="cards" src="./img/panda.png"
-            alt="Perfil de usuário com imagem de um Panda">
-            <p>Pedrinho</p></li>
-            <li><img class="cards" src="./img/robot.png"
-            alt="Perfil de usuário com imagem de um robô">
-            <p>Júlia</p></li>
-            <li><img class="cards" src="./img/plus.png"
-            alt="Campo para adicionar perfil">
-            <p>Adicionar Perfil</p></li>
-        </ul>
-        <section class="centralize">
-            <button>Gerenciar perfis</button>
-        </section>
-    </main> 
-</body>
+      <h1 class="centralize">Quem está assistindo?</h1>
+      <ul>
+        <li>
+          <img id="aline"
+            class="cards"
+            src="./img/pink.png"
+            alt="Perfil de usuário com imagem de uma garota em desenho"/>
+            <p> <a href="#aline">Aline</a></p>
+        </li>
+        <li>
+          <img id="pedrinho"
+            class="cards"
+            src="./img/panda.png"
+            alt="Perfil de usuário com imagem de um Panda"/>
+            <p><a href="#pedrinho">Pedrinho</a></p>
+        </li>
+        <li>
+          <img id="julia"
+            class="cards"
+            src="./img/robot.png"
+            alt="Perfil de usuário com imagem de um robô"/>
+            <p> <a href="#julia">Júlia</a></p>
+        </li>
+        <li>
+          <img id="adicionar-perfil"
+            class="cards"
+            src="./img/plus.png"
+            alt="Campo para adicionar perfil"/>
+          <p> <a href="#adicionar-perfil">Adicionar Perfil</a></p>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <button class="button-perfis">Gerenciar perfis</button>
+    </footer>
+  </body>
 </html>

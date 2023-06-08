@@ -1,37 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica&family=Inter:wght@400;500&family=Nunito+Sans&family=Nunito:wght@200&display=swap');
 
-body{
+body{ 
     background-color: black;
     color: white;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .centralize{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px 0px 70px;
 }
 
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
 
-ul {
-    color: gray;
-    width: 1000px;
+ul li p{
     list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul li p a{
+    text-decoration: none;
+    color: gray;
+}
+
+ul li :hover{
+    color: white;
+}
+
+.cards{
+    display: row;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.cards:hover{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
 }
 
 button{
     color: white;
     background-color: black;
     border: 1px solid white;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 5px;
-    width: 250px;
-    height: 40px;
+    width: 180px;
+    height: 50px;
     font-family: 'Geologica', sans-serif;
 }
 
-.cards{
-    border-radius: 10px;
-    width: 250px;
-    height: 250px;
+footer :hover{
+    background-color: white;
+    color: black;
 }
