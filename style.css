@@ -1,77 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Inter:wght@400;500&family=Nunito+Sans&family=Nunito:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geologica&family=Inter:wght@400;500&family=Nunito+Sans&family=Nunito:wght@200&display=swap");
 
-body{ 
-    background-color: black;
-    color: white;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-decoration: none;
+body {
+  background-color: black;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
 }
 
-h1{
-    font-size: 2em;
-    font-weight: bold;
+h1 {
+  font-size: 2em;
+  font-weight: bold;
 }
 
-.centralize{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0px 70px;
+.centralize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px 70px;
 }
 
-ul{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 50px;
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
 }
 
-ul li p{
-    list-style: none;
-    text-align: center;
-    margin-top: 20px;
+ul li figcaption {
+  list-style: none;
+  text-align: center;
+  margin-top: 20px;
 }
 
-ul li p a{
-    text-decoration: none;
-    color: gray;
+.description {
+  text-decoration: none;
+  color: gray;
+  transition: color 0.3s;
 }
 
-ul li :hover{
-    color: white;
+.cards {
+  display: row;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 0px 1px transparent;
+  transition: box-shadow 0.3s linear;
 }
 
-.cards{
-    display: row;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
+.conteiner:hover .cards {
+  box-shadow: 0px 0px 0px 1px white;
+  border-radius: 10px;
 }
 
-.cards:hover{
-    border: 1px solid white;
-    border-radius: 10px;
+.conteiner:hover .description {
+  color: white;
 }
 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 90px;
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
 }
 
-button{
-    color: white;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 5px;
-    width: 180px;
-    height: 50px;
-    font-family: 'Geologica', sans-serif;
+button {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 180px;
+  height: 50px;
+  font-family: "Geologica", sans-serif;
+  transition: background 0.4s;
 }
 
-footer :hover{
-    background-color: white;
-    color: black;
+footer :hover {
+  background-color: white;
+  color: black;
 }
